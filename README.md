@@ -5,3 +5,4 @@ My solutions to [Leet Code 30 Day Coding Challenge](https://leetcode.com/explore
 - [Day 18 - Minimum Path Sum](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day18/README.md)
 - [Day 19 - Search in Rotated Sorted Array](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day19/README.md)
 - [Day 20 - Construct Binary Search Tree from Preorder Traversal](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day20/README.md)
+- [Day 21 - Leftmost Column with at Least a One](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day21/README.md)
