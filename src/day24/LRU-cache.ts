@@ -1,40 +1,35 @@
 class LRUCache {
-  cache: {};
+  cache: Map<number, number>;
   capacity: number;
   q: number[];
 
   constructor(capacity: number) {
-    this.cache = {};
+    this.cache = new Map<number, number>();
     this.capacity = capacity;
-    this.q = [];
   }
 
   get(key: number): number {
-    const element: null = this.cache[key];
-    if (element === undefined) {
+    if (!this.cache.has(key)) {
       return -1;
     }
-    const index: number = this.q.indexOf(key);
-    this.q.splice(index, 1);
-    this.q.unshift(key);
-    return element;
+    const value: number = this.cache.get(key);
+    this.cache.delete(key);
+    this.cache.set(key, value);
+    return this.cache.get(key);
   }
 
   put(key: number, value: number) {
-    if (this.cache[key] !== undefined) {
-      this.cache[key] = value;
-      const index: number = this.q.indexOf(key);
-      this.q.splice(index, 1);
-      this.q.unshift(key);
-      return;
+    if (this.cache.has(key)) {
+      this.cache.delete(key);
     }
 
-    if (this.capacity === this.q.length) {
-      const expired: number = this.q.pop();
-      delete this.cache[expired];
+    this.cache.set(key, value);
+
+    if (this.cache.size > this.capacity) {
+      const iterator: Iterator<number> = this.cache.keys();
+      const oldestElementKey: number = iterator.next().value;
+      this.cache.delete(oldestElementKey);
     }
-    this.q.unshift(key);
-    this.cache[key] = value;
   }
 }
 
