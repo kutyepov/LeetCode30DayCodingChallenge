@@ -8,3 +8,4 @@ My solutions to [Leet Code 30 Day Coding Challenge](https://leetcode.com/explore
 - [Day 21 - Leftmost Column with at Least a One](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day21/README.md)
 - [Day 22 - Subarray Sum Equals K](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day22/README.md)
 - [Day 23 - Bitwise AND of Numbers Range](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day23/README.md)
+- [Day 24 - LRU Cache](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/day24/README.md)
