@@ -16,7 +16,7 @@
     "nyc": "15.1.0",
     "ts-mocha": "7.0.0",
     "ts-node": "8.10.2",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   },
   "scripts": {
     "test": "ts-mocha --path -p ./tsconfig.json src/**/*.spec.ts",
