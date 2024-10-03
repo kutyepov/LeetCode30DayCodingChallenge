@@ -11,7 +11,7 @@
     "chai": "4.2.0",
     "eslint": "7.11.0",
     "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-import": "2.31.0",
     "mocha": "8.2.1",
     "nyc": "15.1.0",
     "ts-mocha": "8.0.0",
